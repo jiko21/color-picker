@@ -9,7 +9,7 @@
     "plugin:react/recommended",
     "google",
     "prettier",
-    "'plugin:jest/recommended',",
+    "plugin:jest/recommended",
     "eslint:recommended",
     "plugin:react-hooks/recommended"
   ],
