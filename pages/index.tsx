@@ -3,6 +3,7 @@ import { ColorPanels } from "@/components/organisms/ColorPanels";
 import { useCallback } from "react";
 import { useRouter } from "next/router";
 import {generateRandomColor} from "@/util/color";
+import {Seo} from "@/components/atoms/Seo";
 
 const Home: NextPage<{ colors: string[] }> = ({ colors }) => {
   const router = useRouter();
@@ -26,7 +27,12 @@ const Home: NextPage<{ colors: string[] }> = ({ colors }) => {
     });
   }, [colors, router]);
 
-  return <ColorPanels colors={colors} addColor={addColor} setColor={setColor} />
+  return (
+      <>
+        <Seo colors={colors} />
+        <ColorPanels colors={colors} addColor={addColor} setColor={setColor} />
+      </>
+    );
 }
 
 export const getServerSideProps = async ({
