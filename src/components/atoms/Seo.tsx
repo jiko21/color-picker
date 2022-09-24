@@ -5,7 +5,7 @@ interface SeoProps {
   colors: string[];
 }
 export const Seo: React.FC<SeoProps> = ({ colors }) => {
-  const url = React.useMemo( () => {
+  const ogpUrl = React.useMemo( () => {
     const urlSearchParams = new URLSearchParams();
     colors.forEach((color) => {
       urlSearchParams.append('color', color);
@@ -19,8 +19,8 @@ export const Seo: React.FC<SeoProps> = ({ colors }) => {
       <meta name="description" content="color select app" />
       <meta property="og:title" content="Colory" />
       <meta property="og:type" content="website" />
-       {/* <meta property="og:url" content="https://jiko21.me" />*/}
-      <meta property="og:image" content={url} />
+      <meta property="og:url" content="https://colory.vercel.app" />
+      {colors.length > 0 && <meta property="og:image" content={ogpUrl} />}
       <meta property="og:site_name" content="Colory" />
       <meta property="og:description" content="color select app" />
       <meta name="twitter:card" content="summary" />
