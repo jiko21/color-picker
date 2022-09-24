@@ -1,4 +1,4 @@
-import { ColorFrame } from '@/components/Atoms/ColorFrame';
+import { ColorFrame } from '@/components/atoms/ColorFrame';
 import { render } from '@testing-library/react';
 import React from 'react';
 
