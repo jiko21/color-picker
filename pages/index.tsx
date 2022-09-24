@@ -38,7 +38,7 @@ const Home: NextPage<{ colors: string[] }> = ({ colors }) => {
 export const getServerSideProps = async ({
    query,
  }: GetServerSidePropsContext) => {
-  const color = query.color
+  const color = query.color || [];
   return {
     props: {
       colors: typeof color === 'string' ? [color] : color,
