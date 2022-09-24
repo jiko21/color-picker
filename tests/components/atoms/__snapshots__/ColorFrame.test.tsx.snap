@@ -12,16 +12,3 @@ exports[`@/components/atoms/ColorFrame.tsx correctly render 1`] = `
   </div>
 </div>
 `;
-
-exports[`components/Atoms/ColorFrame.tsx correctly render 1`] = `
-<div>
-  <div
-    class="flex_e15493"
-    style="background-color: rgb(255, 0, 0); align-items: center; justify-content: center;"
-  >
-    <div>
-      children
-    </div>
-  </div>
-</div>
-`;
