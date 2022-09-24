@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`components/Atoms/ColorFrame.tsx correctly render 1`] = `
+exports[`@/components/atoms/ColorFrame.tsx correctly render 1`] = `
 <div>
   <div
     class="flex_e15493"
