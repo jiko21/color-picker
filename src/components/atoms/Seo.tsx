@@ -6,11 +6,15 @@ interface SeoProps {
 }
 export const Seo: React.FC<SeoProps> = ({ colors }) => {
   const ogpUrl = React.useMemo( () => {
-    const urlSearchParams = new URLSearchParams();
-    colors.forEach((color) => {
-      urlSearchParams.append('color', color);
-    });
-    return `https://colory-ogp.jiko21.workers.dev/?${urlSearchParams.toString()}`;
+    if (colors.length > 0) {
+      const urlSearchParams = new URLSearchParams();
+      colors.forEach((color) => {
+        urlSearchParams.append('color', color);
+      });
+      return `https://colory-ogp.jiko21.workers.dev/?${urlSearchParams.toString()}`;
+    } else {
+      return 'https://colory-ogp.jiko21.workers.dev';
+    }
   }, [colors]);
 
   return (
@@ -20,7 +24,7 @@ export const Seo: React.FC<SeoProps> = ({ colors }) => {
       <meta property="og:title" content="Colory" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://colory.vercel.app" />
-      {colors.length > 0 && <meta property="og:image" content={ogpUrl} />}
+      <meta property="og:image" content={ogpUrl} />
       <meta property="og:site_name" content="Colory" />
       <meta property="og:description" content="color select app" />
       <meta name="twitter:card" content="summary" />
