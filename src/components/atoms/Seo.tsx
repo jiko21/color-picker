@@ -20,7 +20,11 @@ export const Seo: React.FC<SeoProps> = ({ colors }) => {
   return (
     <Head>
       <title>Colory</title>
-      <meta name="description" content="color select app" />
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+      <link rel="manifest" href="favicon/site.webmanifest" />
+      <meta name="description" content="color selegct app" />
       <meta property="og:title" content="Colory" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://colory.vercel.app" />
