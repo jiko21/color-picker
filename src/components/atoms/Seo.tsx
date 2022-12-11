@@ -11,9 +11,9 @@ export const Seo: React.FC<SeoProps> = ({ colors }) => {
       colors.forEach((color) => {
         urlSearchParams.append('color', color);
       });
-      return `https://colory-ogp.jiko21.workers.dev/?${urlSearchParams.toString()}`;
+      return `/api/static?${urlSearchParams.toString()}`;
     } else {
-      return 'https://colory-ogp.jiko21.workers.dev';
+      return '/api/static';
     }
   }, [colors]);
 
