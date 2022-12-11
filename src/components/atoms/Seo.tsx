@@ -11,9 +11,9 @@ export const Seo: React.FC<SeoProps> = ({ colors }) => {
       colors.forEach((color) => {
         urlSearchParams.append('color', color);
       });
-      return `/api/static?${urlSearchParams.toString()}`;
+      return `https://colory-git-use-vercel-og-jiko21.vercel.app/api/static?${urlSearchParams.toString()}`;
     } else {
-      return '/api/static';
+      return 'https://colory-git-use-vercel-og-jiko21.vercel.app/api/static';
     }
   }, [colors]);
 
