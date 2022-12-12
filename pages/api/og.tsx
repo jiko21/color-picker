@@ -32,7 +32,7 @@ export default function (req: NextRequest, res: NextResponse) {
     ),
     {
       width: 1200,
-      height: 600,
+      height: 630,
     },
   );
 }
