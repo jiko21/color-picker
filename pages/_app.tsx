@@ -11,7 +11,7 @@ const MyApp = ({Component, pageProps}: AppProps) => (
         header={
           <Header>
             <Text height="size-200" margin="size-1000">
-              Colory
+              color-picker
             </Text>
           </Header>
         }
