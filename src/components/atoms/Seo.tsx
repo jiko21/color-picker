@@ -29,7 +29,7 @@ export const Seo: React.FC<SeoProps> = ({ colors }) => {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://color-picker-jiko21.vercel.app" />
       <meta property="og:image" content={ogpUrl} />
-      <meta property="og:site_name" content="Colory" />
+      <meta property="og:site_name" content="Color picker" />
       <meta property="og:description" content="color select app" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@jiko_21" />
